@@ -229,7 +229,7 @@ void memory_config::reg_options(class OptionParser *opp) {
                          "1");
   // JH : scheduling scheme
   option_parser_register(opp, "-gpgpu_frfcfs_option", OPT_INT32,
-                         &frfcfs_option, "0 = default (default), 1 = Warped-MC", "0");    
+                         &frfcfs_option, "0 = FR-FCFS (default), 1 = Warped-MC", "0");    
 
  
   option_parser_register(opp, "-gpgpu_dram_partition_queues", OPT_CSTR,
